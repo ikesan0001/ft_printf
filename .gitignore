@@ -1,0 +1,7 @@
+a.out
+test.c
+*.o
+*.a
+main.c
+*.json
+memo.txt
