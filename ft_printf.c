@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:09:37 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:21:32 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,17 +65,22 @@ static int	ft_check_types(va_list ap, int specifier)
 
 int main(void)
 {
-	ft_printf("\nft %p\n", -1);
-	printf("pr %p\n", -1);
+	uintptr_t	p;
+	p = -1;
+	ft_printf("\nft %p\n", (void *)p);
+	printf("pr %p\n", (void *)p);
 
-	ft_printf("\nft %p\n", 1);
-	printf("pr %p\n", 1);
+	p = 1;
+	ft_printf("\nft %p\n", (void *)p);
+	printf("pr %p\n", (void *)p);
 
-	ft_printf("\nft %p\n", 15);
-	printf("pr %p\n", 15);
+	p = 15;
+	ft_printf("\nft %p\n", (void *)p);
+	printf("pr %p\n", (void *)p);
 
-	ft_printf("\nft %p\n", 16);
-	printf("pr %p\n", 16);
+	p = 16;
+	ft_printf("\nft %p\n", (void *)p);
+	printf("pr %p\n", (void *)p);
 	return (0);
 }
 
