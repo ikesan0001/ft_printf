@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:46:17 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:52:18 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ static int	ft_check_types(va_list ap, int specifier)
 	else if (specifier == 'u')
 		len = ft_print_unnbr(va_arg(ap, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
-		len = ft_print_hex(va_arg(ap, unsigned long long), specifier);
+		len = ft_print_hex(va_arg(ap, unsigned int), specifier);
 	else if (specifier == '%')
 		len = ft_print_char('%');
 	return (len);

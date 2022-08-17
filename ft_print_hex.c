@@ -6,15 +6,15 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:20 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:45:02 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:52:14 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./includes/ft_printf.h"
 
-static int	ft_hexlen(unsigned long long n);
+static int	ft_hexlen(unsigned int n);
 
-int	ft_print_hex(unsigned long long n, int specifier)
+int	ft_print_hex(unsigned int n, int specifier)
 {
 	int	len;
 
@@ -39,7 +39,7 @@ int	ft_print_hex(unsigned long long n, int specifier)
 	return (len);
 }
 
-static int	ft_hexlen(unsigned long long n)
+static int	ft_hexlen(unsigned int n)
 {
 	int	len;
 
