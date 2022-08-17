@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 05:28:00 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 05:29:42 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,10 +60,4 @@ static int	ft_check_types(va_list ap, int specifier)
 	else if (specifier == '%')
 		len = ft_print_char('%');
 	return (len);
-}
-
-int main(void)
-{
-	ft_printf("%d", 1);
-	return (0);
 }
