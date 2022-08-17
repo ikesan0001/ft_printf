@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:25 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 05:46:06 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 06:01:01 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ int	ft_print_nbr(int n)
 		ft_print_char('-');
 		if (n <= -10)
 			ft_print_nbr(n / -10);
-		n %= -10;
-		printf("%d/n", n);
+		n *= -1;
 	}
 	if (n >= 10)
 		ft_print_nbr(n / 10);
