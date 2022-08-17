@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:22:47 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:28:57 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,20 +67,20 @@ int main(void)
 {
 	uintptr_t	p;
 	p = -1;
-	ft_printf("\nft %p\n", (void *)p);
-	printf("pr %p\n", (void *)p);
+	printf("\nft %d ", ft_printf(" %p\n", (void *)p));
+	printf("pr %d ", printf("%p\n", (void *)p));
 
 	p = 1;
-	ft_printf("\nft %p\n", (void *)p);
-	printf("pr %p\n", (void *)p);
+	printf("\nft %d ", ft_printf(" %p\n", (void *)p));
+	printf("pr %d ", printf("%p\n", (void *)p));
 
 	p = 15;
-	ft_printf("\nft %p\n", (void *)p);
-	printf("pr %p\n", (void *)p);
+	printf("\nft %d ", ft_printf(" %p\n", (void *)p));
+	printf("pr %d ", printf("%p\n", (void *)p));
 
 	p = 16;
-	ft_printf("\nft %p\n", (void *)p);
-	printf("pr %p\n", (void *)p);
+	printf("\nft %d ", ft_printf(" %p\n", (void *)p));
+	printf("pr %d ", printf("%p\n", (void *)p));
 	return (0);
 }
 
