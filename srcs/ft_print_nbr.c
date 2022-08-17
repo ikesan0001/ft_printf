@@ -6,13 +6,13 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:25 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:18:38 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 04:43:35 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/ft_printf.h"
 
-static int	ft_numlen(n);
+static int	ft_numlen(int n);
 
 int	ft_print_nbr(int n)
 {
@@ -34,7 +34,7 @@ int	ft_print_nbr(int n)
 	return (len);
 }
 
-static int	ft_numlen(n)
+static int	ft_numlen(int n)
 {
 	int	len;
 
