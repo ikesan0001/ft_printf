@@ -6,11 +6,11 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 22:46:41 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:44:16 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 04:50:49 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "./includes/ft_printf.h"
 
 int	ft_print_char(int c)
 {

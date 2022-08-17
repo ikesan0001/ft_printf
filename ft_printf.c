@@ -6,11 +6,11 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:44:07 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 04:50:25 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "./includes/ft_printf.h"
 
 static int	ft_check_types(va_list ap, int specifier);
 

@@ -6,11 +6,11 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:32 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:14:16 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 04:50:30 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/ft_printf.h"
+#include "./includes/ft_printf.h"
 
 static int	ft_unnumlen(unsigned int n);
 
