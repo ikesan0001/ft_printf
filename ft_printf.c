@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:30:50 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:32:05 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,20 +67,20 @@ int main(void)
 {
 	uintptr_t	p;
 	p = -1;
-	printf("\nft %d \n", ft_printf(" %p", (void *)p));
-	printf("pr %d \n", printf("%p", (void *)p));
+	printf("ft %d \n", ft_printf(" %p", (void *)p));
+	printf("pr %d \n", printf(" %p", (void *)p));
 
 	p = 1;
-	printf("\nft %d \n", ft_printf(" %p", (void *)p));
-	printf("pr %d \n", printf("%p", (void *)p));
+	printf("ft %d \n", ft_printf(" %p", (void *)p));
+	printf("pr %d \n", printf(" %p", (void *)p));
 
 	p = 15;
-	printf("\nft %d \n", ft_printf(" %p", (void *)p));
-	printf("pr %d \n", printf("%p", (void *)p));
+	printf("ft %d \n", ft_printf(" %p", (void *)p));
+	printf("pr %d \n", printf(" %p", (void *)p));
 
 	p = 16;
-	printf("\nft %d \n", ft_printf(" %p", (void *)p));
-	printf("pr %d \n", printf("%p", (void *)p));
+	printf("ft %d \n", ft_printf(" %p", (void *)p));
+	printf("pr %d \n", printf(" %p", (void *)p));
 	return (0);
 }
 
