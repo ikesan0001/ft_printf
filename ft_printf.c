@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:50:25 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 05:04:33 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_printf(const char *fmt, ...)
 			i++;
 			length += ft_check_types(ap, fmt[i]);
 		}
-		length += ft_printchar(fmt[i]);
+		length += ft_print_char(fmt[i]);
 		i++;
 	}
 	va_end(ap);
@@ -45,7 +45,7 @@ static int	ft_check_types(va_list ap, int specifier)
 
 	len = 0;
 	if (specifier == 'c')
-		len = ft_printchar(va_arg(ap, int));
+		len = ft_print_char(va_arg(ap, int));
 	else if (specifier == 's')
 		len = ft_print_str(va_arg(ap, char *));
 	else if (specifier == 'p')
@@ -55,8 +55,8 @@ static int	ft_check_types(va_list ap, int specifier)
 	else if (specifier == 'u')
 		len = ft_print_unnbr(va_arg(ap, unsigned int));
 	else if (specifier == 'x' || specifier == 'X')
-		len = ft_print_hex(va_arg(ap, char *), specifier);
+		len = ft_print_hex(va_arg(ap, unsigned int), specifier);
 	else if (specifier == '%')
-		len = ft_printchar('%');
+		len = ft_print_char('%');
 	return (len);
 }
