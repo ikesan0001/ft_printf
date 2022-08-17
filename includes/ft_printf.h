@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:05:22 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/17 23:49:06 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 03:40:31 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ int		ft_print_str(char *s);
 int		ft_print_address(unsigned long n);
 int		ft_print_nbr(int n);
 int		ft_print_unnbr(unsigned int n);
-int		ft_print_hex(unsigned int n);
+int		ft_print_hex(unsigned int n, int specifier);
 
 #endif

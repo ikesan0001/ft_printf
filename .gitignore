@@ -5,3 +5,5 @@ test.c
 main.c
 *.json
 memo.txt
+.vscode
+.vscode/*
