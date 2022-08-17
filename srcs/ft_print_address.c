@@ -6,7 +6,14 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:16 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:14:25 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 04:42:36 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../includes/ft_printf.h"
+
+int	ft_print_address(unsigned long n)
+{
+	n++;
+	return (0);
+}
