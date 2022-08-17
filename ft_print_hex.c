@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:20 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 07:43:33 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 07:45:02 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_print_hex(unsigned long long n, int specifier)
 	return (len);
 }
 
-static int	ft_hexlen(unsigned long n)
+static int	ft_hexlen(unsigned long long n)
 {
 	int	len;
 
