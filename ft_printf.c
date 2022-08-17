@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 06:11:18 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 05:20:26 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 05:28:00 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ int	ft_printf(const char *fmt, ...)
 			i++;
 			length += ft_check_types(ap, (int)fmt[i]);
 		}
-		length += ft_print_char((int)fmt[i]);
+		else
+			length += ft_print_char((int)fmt[i]);
 		i++;
 	}
 	va_end(ap);
@@ -59,4 +60,10 @@ static int	ft_check_types(va_list ap, int specifier)
 	else if (specifier == '%')
 		len = ft_print_char('%');
 	return (len);
+}
+
+int main(void)
+{
+	ft_printf("%d", 1);
+	return (0);
 }
