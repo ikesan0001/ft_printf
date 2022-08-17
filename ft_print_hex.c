@@ -6,7 +6,7 @@
 /*   By: iryoga <iryoga@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 23:49:20 by iryoga            #+#    #+#             */
-/*   Updated: 2022/08/18 04:50:43 by iryoga           ###   ########.fr       */
+/*   Updated: 2022/08/18 06:24:02 by iryoga           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,18 @@ int	ft_print_hex(unsigned int n, int specifier)
 	if (n >= 16)
 		ft_print_hex(n / 16, specifier);
 	n %= 16;
-	if (n < 10)
-		ft_print_char(n + '0');
-	if (specifier == 'x')
-		ft_print_char(n - 10 + 'a');
-	if (specifier == 'X')
-		ft_print_char(n - 10 + 'A');
+	if (n < 16)
+	{
+		if (n < 10)
+			ft_print_char(n + '0');
+		else
+		{
+			if (specifier == 'x')
+				ft_print_char(n - 10 + 'a');
+			if (specifier == 'X')
+				ft_print_char(n - 10 + 'A');
+		}
+	}
 	return (len);
 }
 
